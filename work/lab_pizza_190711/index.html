@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8" />
+    <title>CPRG256 - lab 5</title>    
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <script type="text/javascript" src="./pizza_JavaScript.js"> 
+        </script>     
+    </head>
+    
+   
+<body onload="currentDate()">
+        <main>
+		<header>
+			<h1>Welcome to Mel's Pizza Place</h1>
+		</header>
+
+        <br>
+
+		<h2>
+                <span id="date"></span></h2>     
+		<br>
+    
+    
+    <form method="post" onsubmit="return summarizeOrder()">
+        <table>
+        <tr>
+            <td>First Name:</td>
+            <td><input id="fname" type="text" 
+                size="25" 
+                pattern="[-A-Za-z]{1,25}" 
+                title="Letters and/or hyphens ONLY."
+             placeholder="Your Firstname"></td>
+        </tr>
+        <tr>
+            <td>Last Name:</td>
+            <td><input id="lname" type="text" 
+                size="25" 
+                pattern="[-A-Za-z]{1,25}" 
+                title="Letters and/or hyphens ONLY." 
+                placeholder="Your Lastname"></td>
+        </tr>
+        <tr>
+            <td>Street Address:</td>
+            <td><input id="address" type="text" 
+                size="25" 
+                title="Your Address" 
+                placeholder="Your Address"></td>
+        </tr>
+        <tr>
+            <td>Telephone Number:</td>
+            <td><input type="tel" id="phone" 
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                maxlength="12" 
+                placeholder="Your Phone Number"
+                size="25" title="Format: XXX-XXX-XXXX."
+               ></td>
+            
+        </tr>
+        <tr>
+        <td> Type:</td>
+        <td><input type="radio" checked name="type" id ="Small Pizza" value="8.00">Small-$8.00<br>
+        <input type="radio" name="type" id ="Medium Pizza" value="10.00">Medium-$10.00<br>
+        <input type="radio" name="type" id ="Large Pizza" value="15.00">Large-$15.00<br>
+        <input type="radio" name="type" id ="Extra Large Pizza" value="18.00">Extra large-$18.00<br></td> 
+        </tr>
+        <tr>
+        <td> Special:</td>
+        <td>
+                <br>
+            <img src="./images/supercheesy.jpg" class="small" alt="Image N/A"> <br>
+         <input type="radio" name="special" id ="Super Cheesy" value="3.00">Super Cheesy-$3.00<br><br>
+            <img src="./images/extrameaty.jpg" class="small" alt="Image N/A"> <br>
+        <input type="radio" name="special" id="Extra Meaty" value="5.00">Extra Meaty-$5.00<br><br>
+            <img src="./images/reallyveggie.jpg" class="small" alt="Image N/A"> <br>
+        <input type="radio" name="special" id="Really Veggie" value="2.00">Really Veggie-$2.00<br>
+        <br>
+        <input type="radio" checked name="special" id="None" value="0.00">None-$0.00</td> 
+        </tr>
+        <tr>
+        <td>
+            Additional:
+            </td>
+            <td>
+            <input type="checkbox" name="additional" id="Extra Cheese" value="1.50">Extra Cheese-$1.50<br>
+            <input type="checkbox" name="additional" id="Pepperoni" value="1.50">Pepperoni-$1.50<br>
+            <input type="checkbox" name="additional" id="Mushrooms" value="1.50">Mushrooms-$1.50<br>
+            <input type="checkbox" name="additional" id="Bacon" value="1.50">Bacon-$1.50<br>
+            <input type="checkbox" name="additional" id="Olives" value="1.50">Olives-$1.50<br>
+            <input type="checkbox" name="additional" id="Ham" value="1.50">Ham-$1.50
+            </td>
+        </tr>
+        <tr>
+            <!------- return false???? -->
+            <td><input 
+                type="submit" value="Complete Order"/> </td>
+            <td><input type="reset" value="Reset"> </td>
+        </tr>
+       </table>
+    </form>
+        
+    <!------------------------------------------------------------------>
+    <!------------------------------------------------------------------>
+    <!------------------------------------------------------------------>
+    <br>    
+    <hr> <hr>
+        
+	<br>
+		<div class="result">
+			<span id="orderdetails"></span>	
+		</div>
+		<br>
+
+   </main>
+      </body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+body {
+    background-image: url("../images/pizza.png");
+}
+
+header {
+	text-align: center;
+}
+
+input {
+	font-family: Gotham Book, Arial;
+	font-size: 15x;
+	background-color: rgb(247, 234, 176);
+}
+
+
+h1 {
+    font-family: Edwardian Script ITC;
+	font-size: 400%;
+	background-color: rgb(202, 228, 201);
+    color: rgb(75, 61, 17);
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+h2 {
+	background-color: rgb(233, 233, 158);
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+}
+
+
+table, th, td {
+    
+	border: 1px solid rgb(235, 98, 44);
+	font-weight: bold;
+    padding: 8px;
+    margin-left:auto; 
+	margin-right:auto;
+	background-color: rgb(250, 243, 243);
+}
+
+.contact td, th {
+	font-family: Gotham;
+	font-size: 20px;
+}
+
+.result {
+	background-color: rgb(213, 199, 224);
+	
+	width: 250px;
+	align-content: center;
+	margin-left: auto;
+	margin-right: auto;
+
+	padding-left: 100px;
+	padding-right: 80px;
+	
+
+}
+
+
+
+.error {
+	background-color: rgb(228, 122, 122);
+}
+
+img.small {
+	width: 190px;
+	height: 150px;
+	
+}
